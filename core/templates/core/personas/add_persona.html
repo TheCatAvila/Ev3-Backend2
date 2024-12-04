@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+{% block principal %} 
+
+<section class="hero-section"></section>
+
+<div class="cont-form-sections">
+    <h3 style="margin-top: -100px; margin-bottom: 25px;">Agregar Persona</h3>
+    <form class="form-sections" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Muestra el formulario como párrafos -->
+        <button type="submit">Guardar</button>
+    </form>
+</div>
+
+{% endblock %}

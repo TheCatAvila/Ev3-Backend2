@@ -1,0 +1,13 @@
+.cont-form-sections{
+    height: auto;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-sections{
+    text-align: left;
+}
